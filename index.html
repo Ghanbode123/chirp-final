@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chirp - Twitter Analytics</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Chirp - Twitter Analytics App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="assets/logo.png" alt="Chirp Logo">
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <img src="assets/chirp-logo.svg" alt="Chirp Logo">
+        <span>Chirp</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-      </div>
-    </nav>
-  </header>
+      <button class="mobile-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Chirp - Twitter Analytics</h1>
-        <p>Analyze and optimize your Twitter performance with Chirp. Unlock valuable insights to boost your social media
-          strategy.</p>
-        <a href="#" class="cta-btn">Get Started</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Supercharge Your Twitter Analytics</h1>
+      <p>Track, analyze, and optimize your Twitter performance with Chirp.</p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <!-- Feature Cards - Repeat as needed -->
+      <div class="feature-card">
+        <img src="assets/feature-1.svg" alt="Feature 1 Icon">
+        <h2>Real-time Analytics</h2>
+        <p>Get instant insights into your Twitter activity with real-time analytics.</p>
       </div>
-      <div class="hero-image">
-        <
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <!-- Pricing Cards - Repeat as needed -->
+      <div class="pricing-card">
+        <h2>Basic</h2>
+        <p>$9.99/month</p>
+        <ul>
+          <li>Real-time Analytics</li>
+          <li>Track Followers Growth</li>
+          <li>Hashtag Performance</li>
+          <li>Email Support</li>
+        </ul>
+        <button class="btn btn-secondary">Sign Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How can I create an account to use Chirp?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna vel justo fermentum, eu tincidunt purus cursus.</p>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have any questions or need support? Feel free to reach out to us.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
