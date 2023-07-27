@@ -1,26 +1,121 @@
-/* Reset some default styles to improve consistency */
-* {
+/* CSS FOR MY FAQ.HTML
+/* Reset some default styles */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  /* Body styles */
   body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+  }
+  
+  header {
     background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .navigation {
+    display: none;
+  }
+  
+  .navigation.mobile-menu {
+    display: block;
+  }
+  
+  .navigation nav {
+    display: flex;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  .btns {
+    display: flex;
+    align-items: center;
+  }
+  
+  .signinBtn {
+    display: flex;
+    align-items: center;
+    background-color: #1da1f2; /* Twitter blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .signinBtn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .Toggle {
+    display: none;
+  }
+  
+  /* Styling for the FAQ section */
+  .faq {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* css for index html*/
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 200px;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
     color: #333;
   }
   
-  /* Navigation Menu styles */
-  .navbar {
-    background-color: #007bff;
-    color: #fff;
+  a {
+    text-decoration: none;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f9f9f9;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
   }
   
   .navbar-brand {
@@ -29,8 +124,9 @@
   }
   
   .navbar-brand img {
+    width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 0.5rem;
   }
   
   .nav-links {
@@ -39,106 +135,149 @@
   }
   
   .nav-links li {
-    margin-right: 20px;
+    margin-right: 1rem;
+  }
+  
+  .nav-links a {
+    color: #555;
   }
   
   /* Hero Section styles */
   .hero {
+    background-color: #f0f0f0;
     padding: 2rem;
     text-align: center;
-    background-color: #fff;
   }
   
   .hero h1 {
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
   
   .hero p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    color: #777;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
   
-  /* Features Section styles */
-  .features {
-    padding: 2rem;
-    background-color: #f0f0f0;
-  }
-  
-  .features h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .feature-card {
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid #ccc;
+  .hero button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    cursor: pointer;
   }
   
   /* Customer Review Section styles */
-  .customer.review {
-    padding: 2rem;
-    background-color: #fff;
+  .customer-review {
+    background-color: #f0f0f0;
+    padding: 3rem;
+    text-align: center;
   }
   
-  .customer.review h2 {
-    font-size: 2rem;
-    text-align: center;
+  .customer-review h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 2rem;
   }
   
-  .customers {
-    text-align: center;
-    margin-bottom: 1rem;
+  .customer {
+    margin-bottom: 2rem;
   }
   
-  .customers img {
-    height: 50px;
+  .customer img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    margin-bottom: 1rem;
   }
   
   /* Pricing Section styles */
   .pricing {
-    padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
+    padding: 3rem;
+    text-align: center;
   }
   
   .pricing h2 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 2rem;
   }
   
   .pricing-card {
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid #ccc;
+    padding: 2rem;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .pricing-card p {
-    font-size: 1.2rem;
+    color: #777;
     margin-bottom: 1rem;
   }
   
-  .pricing-card ul {
-    list-style: none;
-    margin-bottom: 1rem;
-  }
-  
-  .pricing-card li {
-    margin-bottom: 0.5rem;
+  .pricing-card button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   /* Footer Section styles */
-  footer {
-    padding: 2rem;
-    background-color: #007bff;
-    color: #fff;
+  .footer {
+    background-color: #f9f9f9;
+    padding: 1rem 2rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1da1f2;
+  }
+  
+  .footer .FooterLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+  }
+  
+  .footer a {
+    color: #555;
+    margin-left: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .navbar-brand img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .nav-links li {
+      margin-right: 0.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
   }
