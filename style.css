@@ -1,0 +1,144 @@
+/* Reset some default styles to improve consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Navigation Menu styles */
+  .navbar {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  /* Hero Section styles */
+  .hero {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Features Section styles */
+  .features {
+    padding: 2rem;
+    background-color: #f0f0f0;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Customer Review Section styles */
+  .customer.review {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .customer.review h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .customers {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .customers img {
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Pricing Section styles */
+  .pricing {
+    padding: 2rem;
+    background-color: #f0f0f0;
+  }
+  
+  .pricing h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer Section styles */
+  footer {
+    padding: 2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+  }
